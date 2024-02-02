@@ -1,0 +1,33 @@
+.education-card{
+    padding: 0 .5rem;
+    border-radius: .5rem;
+    background-color: var(--theme);
+
+    .card{
+        padding: 1rem;
+        border-radius: .5rem;
+        background-color: var(--bs-dark);
+
+        display: flex;
+        flex-direction: column;
+        gap: .3rem;
+
+        h4{
+            color: var(--bs-white);
+        }
+
+        p{
+            color: var(--bs-gray-400);
+            font-size: .9rem;
+        }
+
+        .details{
+            display: flex;
+            justify-content: space-between;
+            color: var(--bs-white);
+            h5{
+                font-size: .7rem;
+            }
+        }
+    }
+}

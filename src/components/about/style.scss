@@ -1,0 +1,47 @@
+.about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    padding: 4rem 0;
+    
+    h2{
+        font-size: 3rem;
+        color: var(--theme);
+    }
+
+    .container{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 4rem;
+    }
+
+    .intro{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        h3{
+            align-self: center;
+            color: var(--bs-white);
+            font-size: 1.5rem;
+        }
+        q{
+            color: var(--bs-gray-400);
+            letter-spacing: 1px;
+            line-height: 1.5rem;
+            text-align: justify;
+        }
+    }
+    .education{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        h3{
+            align-self: center;
+            color: var(--bs-white);
+            font-size: 1.5rem;
+        }
+    }
+    
+}

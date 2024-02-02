@@ -1,0 +1,99 @@
+.skills{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    padding: 4rem 0;
+    
+    h2{
+        font-size: 3rem;
+        color: var(--theme);
+    }
+
+    .skill-tool{
+        display: flex;
+        gap: 8rem;
+        h3{
+            font-size: 1.5rem;
+            color: var(--bs-white);
+            transition-duration: .4s;
+            &.active{
+                color: var(--bs-indigo);
+            }
+            &:hover{
+                color: var(--bs-indigo);
+            }
+        }
+    }
+
+    .skills-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 3rem;
+
+        .skill{
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1.5rem;
+            border-radius: 1rem;
+            font-weight: 600;
+            background-color: var(--bs-dark);
+            color: var(--bs-white);
+            box-shadow: 0 0 10px var(--bs-white);
+            transition-duration: .4s;
+            &:hover{
+                color: var(--theme);
+                box-shadow: 0 0 25px var(--theme);
+            }
+            .name-logo{
+                width: 7rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: .5rem;                 
+                svg{
+                    font-size: 5rem;
+                }   
+            }
+            .progress{
+                width: 5rem;
+                height: 5rem;
+            }
+        }
+    }
+    .tools-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 3rem;
+
+        .tool{
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1.5rem;
+            border-radius: 1rem;
+            font-weight: 600;
+            background-color: var(--bs-dark);
+            color: var(--bs-white);
+            box-shadow: 0 0 10px var(--bs-white);
+            transition-duration: .4s;
+            &:hover{
+                color: var(--theme);
+                box-shadow: 0 0 25px var(--theme);
+            }
+            .name-logo{
+                width: 7rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: .5rem;                 
+                svg{
+                    font-size: 5rem;
+                }   
+            }
+        }
+    }
+}

@@ -1,0 +1,30 @@
+.projects{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 4rem 0;
+    h2{
+        color: var(--theme);
+        align-self: center;
+        font-size: 3rem;
+    }
+
+    .slick-arrow{
+        color: var(--bs-white);
+        width: 2rem;
+        height: 2rem;
+        transition-duration: .3s;
+        &:hover{
+            color: var(--theme);
+        }
+    }
+
+    .slick-prev{
+        left: 0rem;
+        transform: translate(-100%, -50%);
+    }
+    .slick-next{
+        right: 0rem;
+        transform: translate(100%, -50%);
+    } 
+}

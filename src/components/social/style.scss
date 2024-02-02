@@ -1,0 +1,21 @@
+.social-group{
+    display: flex;
+    gap: 1.5rem;
+    .social-circle{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 2.5rem;
+        height: 2.5rem;
+        border-radius: 50%;
+        border: 2px solid var(--bs-indigo);
+        color: var(--bs-indigo);
+        box-shadow: 0 0 10px var(--bs-indigo);
+        transition-duration: .4s;
+        &:hover{
+            border: 2px solid var(--theme);
+            color: var(--theme);
+            box-shadow: 0 0 15px var(--theme);
+        }
+    }
+}

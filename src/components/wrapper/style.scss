@@ -1,0 +1,10 @@
+@import '../../mixins.scss';
+
+.wrapper{
+    width: 85%;
+    margin-inline: auto;
+
+    @include md {
+        width: 95%;
+    }
+}

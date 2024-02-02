@@ -1,0 +1,38 @@
+.footer{  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem 0;
+    background-color: var(--bs-dark);
+    .menus{
+        display: flex;
+        align-items: center;
+        .menu{
+            padding-inline: .3rem;
+            color: var(--bs-white);
+            font-size: .8rem;
+            font-weight: 600;
+            transition-duration: .4s;
+            &.active{
+                color: var(--theme);
+            }
+            &:hover{
+                color: var(--theme);
+            }
+        }
+    }
+    .social-group{
+        gap: 1rem;
+        .social-circle{
+            width: 2rem;
+            height: 2rem;
+        }
+    }
+    .dev{
+        text-align: center;
+        color: var(--bs-white);
+        font-size: .8rem;
+        font-weight: 600;
+    }
+}

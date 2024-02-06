@@ -1,12 +1,51 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './style.scss'
 import Wrapper from '../wrapper/Wrapper'
+import { useForm } from '@formspree/react';
+import ButtonLoader from '../ButtonLoader';
+
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function Contact() {
+    const [state, sendData] = useForm("mnqepazb");
+
+    const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        subject: '',
+        message: ''
+    });
+
+    const [toasterShow, setToasterShow] = useState(false)
+
+    const handleChange = (e) => {
+        setFormData({ ...formData, [e.target.name]: e.target.value });
+    };
+
+    const handleSubmit = (e) => {
+        setToasterShow(true)
+        sendData(e);
+        setFormData({
+            name: '',
+            email: '',
+            subject: '',
+            message: ''
+        })
+    }
+
+    useEffect(() => {
+        if (toasterShow && (!state.submitting) && state.succeeded) {
+            toast.success('Message Sent Successfully!', { autoClose: 5000 });
+            setToasterShow(false);
+        }
+    }, [state.succeeded, toasterShow, state.succeeded]);
+
     return (
         <Wrapper>
+            <ToastContainer />
             <div className='contact'>
-                <h2>Contact Me</h2>
+                <h2>Let's Connect</h2>
                 <div className="contact-container">
                     <div className="left">
                         <q className="content">
@@ -27,15 +66,23 @@ function Contact() {
                     </div>
                     <div className="right">
                         <form
-                            action="https://formspree.io/your_form_id"
                             method="POST"
+                            onSubmit={handleSubmit}
                         >
-                            <input type="hidden" name="_replyto" />
-                            <input className='inp' type="text" name="name" placeholder="Your Name" required />
-                            <input className='inp' type="email" name="email" placeholder="Your Email" required />
-                            <input className='inp' type="text" name="subject" placeholder="Subject" required />
-                            <textarea name="message" className='text-area' rows={6} placeholder="Message" required></textarea>
-                            <button className='submit pointer' type="submit">Send Message</button>
+                            {/* <input value="garaisourav12@gmail.com" type="hidden" name="_replyto" /> */}
+                            <input value={formData.name} onChange={handleChange} className='inp' type="text" name="name" placeholder="Your Name" required />
+
+                            <input value={formData.email} onChange={handleChange} className='inp' type="email" name="email" placeholder="Your Email" required />
+
+                            <input value={formData.subject} onChange={handleChange} className='inp' type="text" name="subject" placeholder="Subject" required />
+
+                            <textarea value={formData.message} onChange={handleChange} name="message" className='text-area' rows={6} placeholder="Message" required></textarea>
+
+                            <button className='submit pointer' type="submit">
+                                {state.submitting?(
+                                    <ButtonLoader/>
+                                ):('Send Message')}
+                            </button>
                         </form>
                     </div>
                 </div>

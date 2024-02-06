@@ -21,7 +21,7 @@ function Projects() {
     return (
         <Wrapper>
             <div className='projects'>
-                <h2>My Latest Projects</h2>
+                <h2>Explore My Latest Work</h2>
                 <Slider {...settings}>
                     <ProjectCard />
                     <ProjectCard />

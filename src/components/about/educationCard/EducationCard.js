@@ -1,20 +1,19 @@
 import React from 'react'
 import './style.scss'
 
-function EducationCard() {
+function EducationCard({ed}) {
     return (
         <div className='education-card'>
             <div className="card">
                 <h4>
-                    Bachelor of Technology (Computer Science & 
-                    Engineering)
+                    {ed?.degree}
                 </h4>
                 <p>
-                    Cooch Behar Government Engineering College
+                    {ed?.institute}
                 </p>
                 <div className="details">
-                    <h5>07/2018 – 06/2022</h5>
-                    <h5>CGPA : 8.96</h5>
+                    <h5>{ed?.duration}</h5>
+                    <h5>{ed?.gradeType} : {ed?.grade}</h5>
                 </div>
             </div>
         </div>

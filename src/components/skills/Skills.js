@@ -31,14 +31,16 @@ import Wrapper from '../wrapper/Wrapper';
 function skillCard(logo, title, percent){
     return (
         <div className="skill">
-            <div className="name-logo">
-                {logo}
-                <p className="skill-title">
-                    {title}
-                </p>
-            </div>
-            <div className="progress">
-                <SkillMeter percent={percent}/>
+            <div className="skill-wrapper">
+                <div className="name-logo">
+                    {logo}
+                    <p className="skill-title">
+                        {title}
+                    </p>
+                </div>
+                <div className="progress">
+                    <SkillMeter percent={percent}/>
+                </div>
             </div>
         </div>
     )
@@ -46,11 +48,13 @@ function skillCard(logo, title, percent){
 function toolCard(logo, title){
     return (
         <div className="tool">
-            <div className="name-logo">
-                {logo}
-                <p className="tool-title">
-                    {title}
-                </p>
+            <div className="tool-wrapper">
+                <div className="name-logo">
+                    {logo}
+                    <p className="tool-title">
+                        {title}
+                    </p>
+                </div>
             </div>
         </div>
     )
@@ -61,10 +65,10 @@ function Skills() {
     return (
         <Wrapper>
             <div className='skills'>
-                <h2>Skills</h2>
+                <h2>My Skillset</h2>
                 <div className="skill-tool">
-                    <h3 className={`pointer ${show?'active':''}`} onClick={()=>setShow(!show)}>Skills I Have</h3>
-                    <h3 className={`pointer ${!show?'active':''}`} onClick={()=>setShow(!show)}>Tools I Use</h3>
+                    <h3 className={`pointer ${show?'active':''}`} onClick={()=>setShow(true)}>Skills I Have</h3>
+                    <h3 className={`pointer ${!show?'active':''}`} onClick={()=>setShow(false)}>Tools I Use</h3>
                 </div>
                 {show && <div className="skills-container">
                     {skillCard(<RiJavascriptFill style={{color: 'var(--js)'}} />, 'JavaScript', 85)}

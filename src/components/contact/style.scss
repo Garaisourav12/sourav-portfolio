@@ -55,6 +55,9 @@
                     }
                 }
             }
+            @include lg{
+                gap: 1rem;
+            }
         }
         .right{
             background-color: var(--theme);
@@ -125,7 +128,7 @@
         }
         @include lg{
             grid-template-columns: 1fr;
-            grid-gap: 3rem;
+            grid-gap: 2rem;
         }
     }
     @include lg{

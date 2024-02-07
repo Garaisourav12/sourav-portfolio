@@ -1,21 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+@import '../../mixins.scss';
 
 .header{
     background-color: var(--bs-dark);
     position: sticky;
     top: 0;
     z-index: 1;
+    box-shadow: 0 0 10px var(--bs-gray-800);
     .navbar{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: .7rem 0;
+        padding: .4rem 0;
 
         .logo{
-            font-size: 2rem;
+            font-size: 2.2rem;
             font-weight: 600;
+            font-family: 'Yesteryear', cursive;
             span{
                 color: var(--theme);
+                font-family: 'Yesteryear', cursive;
             }
             color: var(--bs-white);
         }
@@ -36,6 +40,22 @@
                     color: var(--theme);
                 }
             }
+                     
+            @include md{
+                display: none;
+            }  
         }
+        .toggle-menu{
+            display: none;
+            cursor: pointer;
+            color: var(--bs-white);
+            font-size: 2.1rem;
+            &:hover{
+                color: var(--theme);
+            }
+            @include md{
+                display: block;
+            }
+        } 
     }
 }

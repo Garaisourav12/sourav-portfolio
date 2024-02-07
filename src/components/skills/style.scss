@@ -1,18 +1,21 @@
+@import '../../mixins.scss';
+
 .skills{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 3rem;
     padding: 4rem 0;
     
     h2{
         font-size: 3rem;
         color: var(--theme);
+        margin-bottom: 3rem;
     }
 
     .skill-tool{
         display: flex;
         gap: 8rem;
+        margin-bottom: 2rem;
         h3{
             font-size: 1.5rem;
             color: var(--bs-white);
@@ -23,6 +26,9 @@
             &:hover{
                 color: var(--bs-indigo);
             }
+        }
+        @include sm{
+            gap: 4rem;
         }
     }
 
@@ -62,15 +68,37 @@
                     gap: .5rem;                 
                     svg{
                         font-size: 5rem;
-                    }   
+                        @include sm {
+                            font-size: 3rem;
+                        }
+                    }  
+                    @include sm {
+                        font-size: .8rem;
+                        width: 5rem;
+                        gap: .3rem;
+                    } 
                 }
                 .progress{
                     width: 5rem;
                     height: 5rem;
+                    @include sm{
+                        width: 3rem;
+                        height: 3rem;
+                    }
+                }
+                @include sm{
+                    gap: .5rem;
+                    padding: .8rem;
                 }
             }
         }
         
+        @include lg{
+            gap: 2rem;
+        }
+        @include md{
+            gap: 1.5rem;
+        }
     }
     .tools-container{
         display: flex;
@@ -108,9 +136,32 @@
                     gap: .5rem;                 
                     svg{
                         font-size: 5rem;
-                    }   
+                        @include sm {
+                            font-size: 3rem;
+                        }
+                    }  
+                    @include sm {
+                        font-size: .8rem;
+                        width: 5rem;
+                        gap: .3rem;
+                    } 
+                }
+                @include sm{
+                    gap: .5rem;
+                    padding: .8rem;
                 }
             }
         }
+
+        @include lg{
+            gap: 2rem;
+        }
+        @include md{
+            gap: 1.5rem;
+        }
+    }
+
+    @include lg{
+        padding: 3rem 0;
     }
 }

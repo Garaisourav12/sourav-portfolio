@@ -1,3 +1,5 @@
+@import '../../mixins.scss';
+
 .home{
     display: flex;
     align-items: center;
@@ -19,11 +21,17 @@
             h1{
                 font-size: 3rem;
                 color: var(--theme);
+                @include sm{
+                    font-size: 2.5rem;
+                }
             }
             h2{
-                font-size: 1.6rem;
+                font-size: 1.6rem!important;
                 span{
                     color: var(--bs-indigo);
+                }
+                @include sm{
+                    font-size: 1.4rem!important;
                 }
             }
         }
@@ -49,6 +57,12 @@
                 box-shadow: 0 0 15px var(--bs-white);
             }
         }
+        @include lg{
+            flex: 1;
+            align-items: center;
+            text-align: center;
+            gap: 2rem;
+        }
     }
 
     .right{
@@ -57,11 +71,21 @@
         justify-content: center;
 
         .img-box{
-            margin-right: 20px;
-            width: 400px;
-            height: 400px;
+            margin-right: 1.2rem;
+            width: 20rem;
+            height: 20rem;
             border-radius: 50%;
             box-shadow: 0 0 20px var(--theme);
+            @include lg{
+                width: 16rem;
+                height: 16rem;
+                margin: 0;
+            }
         }
+    }
+
+    @include lg{
+        flex-direction: column-reverse;
+        padding: 3rem 0;
     }
 }

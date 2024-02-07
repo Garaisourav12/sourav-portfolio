@@ -2,6 +2,7 @@ import React from 'react'
 import './style.scss'
 import { NavLink } from 'react-router-dom'
 import Wrapper from '../wrapper/Wrapper'
+import { MdOutlineMenu } from "react-icons/md";
 
 function Navbar() {
     return (
@@ -9,7 +10,7 @@ function Navbar() {
             <Wrapper>
                 <nav className='navbar'>
                     <div className="logo pointer">
-                        <span>S</span>ourav.
+                        <span>S</span>ourav <span>.</span>
                     </div>
                     <div className='menus'>
                         <NavLink className={'menu'} to="/" activeclassname="active">Home</NavLink>
@@ -18,6 +19,7 @@ function Navbar() {
                         <NavLink className={'menu'} to="/projects" activeclassname="active">Projects</NavLink>
                         <NavLink className={'menu'} to="/contact" activeclassname="active">Contact</NavLink>
                     </div>
+                    <MdOutlineMenu className='toggle-menu' />
                 </nav>
             </Wrapper>
         </header>

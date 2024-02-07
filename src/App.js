@@ -6,6 +6,8 @@ import Footer from './components/footer/Footer'
 import Skills from './components/skills/Skills'
 import Contact from './components/contact/Contact'
 import Projects from './components/projects/Projects'
+import { FaArrowUpLong } from "react-icons/fa6";
+
 
 function App() {
     return (
@@ -17,6 +19,14 @@ function App() {
             <Projects />
             <Contact />
             <Footer />
+            <button className="scroll-top" onClick={() => {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            }}>
+                <FaArrowUpLong />
+            </button>
         </div>
     )
 }

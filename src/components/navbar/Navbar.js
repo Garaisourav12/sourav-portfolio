@@ -1,10 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './style.scss'
 import { NavLink } from 'react-router-dom'
 import Wrapper from '../wrapper/Wrapper'
 import { MdOutlineMenu } from "react-icons/md";
+import RightDrawer from './RightDrawer';
 
 function Navbar() {
+    const [open, setOpen] = useState(false);
+
     return (
         <header className='header'>
             <Wrapper>
@@ -19,8 +22,11 @@ function Navbar() {
                         <NavLink className={'menu'} to="/projects" activeclassname="active">Projects</NavLink>
                         <NavLink className={'menu'} to="/contact" activeclassname="active">Contact</NavLink>
                     </div>
-                    <MdOutlineMenu className='toggle-menu' />
+                    <MdOutlineMenu className='toggle-menu' onClick={() => setOpen(true)} />
                 </nav>
+                <div className="mobile-drawer">
+                    <RightDrawer open={open} setOpen={setOpen} />
+                </div>
             </Wrapper>
         </header>
     )

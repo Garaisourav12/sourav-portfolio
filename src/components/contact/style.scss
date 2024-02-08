@@ -79,8 +79,10 @@
                     border: 2px solid var(--bs-indigo);
                     color: var(--bs-white);
                     box-shadow: 0 0 5px var(--bs-indigo);
+                    font-size: 1rem;
                     &::placeholder{
                         color: var(--bs-gray-500);
+                        font-size: 1rem;
                     }
                     &:focus{
                         box-shadow: 0 0 20px var(--bs-indigo);
@@ -95,8 +97,10 @@
                     border: 2px solid var(--bs-indigo);
                     box-shadow: 0 0 5px var(--bs-indigo);
                     resize: none;
+                    font-size: 1rem;
                     &::placeholder{
                         color: var(--bs-gray-500);
+                        font-size: 1rem;
                     }
                     &:focus{
                         box-shadow: 0 0 20px var(--bs-indigo);

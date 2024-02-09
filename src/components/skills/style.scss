@@ -10,6 +10,9 @@
         font-size: 3rem;
         color: var(--theme);
         margin-bottom: 3rem;
+        @include lg{
+            margin-bottom: 2.5rem;
+        }
     }
 
     .skill-tool{

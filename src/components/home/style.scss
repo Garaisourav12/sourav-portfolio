@@ -87,5 +87,6 @@
     @include lg{
         flex-direction: column-reverse;
         padding: 3rem 0;
+        gap: 2.5rem;
     }
 }

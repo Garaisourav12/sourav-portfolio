@@ -12,11 +12,11 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        height: 70px;
+        padding: .4rem 0;
 
         .logo{
-            font-size: 2.2rem;
-            font-weight: 600;
+            font-size: 2.3rem;
+            font-weight: 500;
             font-family: 'Yesteryear', cursive;
             span{
                 color: var(--theme);

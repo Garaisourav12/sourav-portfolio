@@ -109,6 +109,10 @@ body{
     background-color: var(--bs-body-color);
 }
 
+a, button{
+    cursor: pointer;
+}
+
 // section{
 //     border: 1px solid red;
 // }

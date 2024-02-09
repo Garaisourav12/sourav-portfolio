@@ -12,11 +12,11 @@
         align-self: center;
     }
     .contact-container{
-        display: grid;
-        grid-template-columns: 5fr 4fr;
-        grid-gap: 4rem;
-        align-items: center;
+        display: flex;
+        justify-content: center;
+        gap: 4rem;
         .left{
+            max-width: 35rem;
             display: flex;
             flex-direction: column;
             gap: 2rem;
@@ -56,12 +56,14 @@
                 }
             }
             @include lg{
+                max-width: none;
                 gap: 1rem;
             }
         }
         .right{
+            min-width: 35rem;
             background-color: var(--theme);
-            padding: .8rem 0;
+            padding: .5rem 0;
             border-radius: 1rem;
             box-shadow: 0 0 20px var(--bs-gray-800);
             form{
@@ -123,7 +125,7 @@
                 }
             }
             @include lg{
-                width: 40rem;
+                max-width: 35rem!important;
                 margin-inline: auto;
             }
             @include sm{
@@ -131,11 +133,12 @@
             }
         }
         @include lg{
-            grid-template-columns: 1fr;
-            grid-gap: 2rem;
+            flex-direction: column;
+            gap: 2rem;
         }
     }
     @include lg{
         padding: 3rem 0;
+        gap: 2.5rem;
     }
 }

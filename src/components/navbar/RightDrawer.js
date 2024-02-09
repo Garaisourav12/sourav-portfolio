@@ -10,7 +10,7 @@ function RightDrawer({open, setOpen}) {
             onClose={() => setOpen(false)}
             className='drawer'
         >
-            {<MenuBox className={'mobile-menus'} />}
+            {<MenuBox className={'mobile-menus'} flag={true} />}
         </Drawer>
     );
 }

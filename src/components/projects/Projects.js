@@ -10,6 +10,11 @@ import { IoIosArrowDropleft, IoIosArrowDropright } from "react-icons/io";
 function Projects() {
     const settings = {
         dots: true,
+        customPaging: (index) => (
+            <button>
+                <div></div>
+            </button>
+        ),
         infinite: true,
         speed: 500,
         slidesToShow: 1,

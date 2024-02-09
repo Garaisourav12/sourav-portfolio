@@ -1,19 +1,40 @@
 import React, { useEffect, useState } from 'react'
-import { Link, scroller } from 'react-scroll';
 
-function MenuBox({className}) {
-    const [activeLink, setActiveLink] = useState('home');
-
-    const handleScroll = () => {
+function MenuBox({className, flag}) {
+    const initialScroll = () => {
+        const headerHeight = document.getElementById('header')?.offsetHeight;
         let sectionOffsets = {
-            home: document.getElementById('home')?.offsetTop - 70,
-            about: document.getElementById('about')?.offsetTop - 70,
-            skills: document.getElementById('skills')?.offsetTop - 70,
-            projects: document.getElementById('projects')?.offsetTop - 70,
-            contact: document.getElementById('contact')?.offsetTop - 70,
+            home: document.getElementById('home')?.offsetTop - headerHeight,
+            about: document.getElementById('about')?.offsetTop - headerHeight,
+            skills: document.getElementById('skills')?.offsetTop - headerHeight,
+            projects: document.getElementById('projects')?.offsetTop - headerHeight,
+            contact: document.getElementById('contact')?.offsetTop - headerHeight,
         };
 
-        console.log(sectionOffsets);
+        const scrollPosition = window.scrollY;
+
+        // Determine which section is currently in view
+        let activeSection = '';
+        Object.entries(sectionOffsets).forEach(([section, offset]) => {
+        if (scrollPosition >= offset && scrollPosition < offset + window.innerHeight) {
+            activeSection = section;
+        }
+        });
+
+        return activeSection;
+    };
+
+    const [activeLink, setActiveLink] = useState(flag? initialScroll() : 'home');
+
+    const handleScroll = () => {
+        const headerHeight = document.getElementById('header')?.offsetHeight;
+        let sectionOffsets = {
+            home: document.getElementById('home')?.offsetTop - headerHeight,
+            about: document.getElementById('about')?.offsetTop - headerHeight,
+            skills: document.getElementById('skills')?.offsetTop - headerHeight,
+            projects: document.getElementById('projects')?.offsetTop - headerHeight,
+            contact: document.getElementById('contact')?.offsetTop - headerHeight,
+        };
 
         const scrollPosition = window.scrollY;
 
@@ -35,61 +56,46 @@ function MenuBox({className}) {
         };
     }, []);
 
+    useEffect(() => {
+        window.addEventListener('resize', handleScroll);
+        return () => {
+            window.removeEventListener('resize', handleScroll);
+        };
+    }, []);
+
     const scrollToSection = (section) => {
+        const headerHeight = document.getElementById('header')?.offsetHeight - 1;
         window.scrollTo({
-            top: document.getElementById(section)?.offsetTop - 30,
+            top: document.getElementById(section)?.offsetTop - headerHeight,
             behavior: 'smooth'
         });
-        // setActiveLink(section);
+        setActiveLink(section)
     };
+
     return (
         <div className={`menus ${className?className:''}`}>
-            <Link
+            <a
                 className={`menu ${activeLink === 'home' ? 'active' : ''}`}
-                smooth={true}
-                duration={500}
                 onClick={() => scrollToSection('home')}
-            >
-                Home
-            </Link>
-            <Link
+            >Home</a>
+            <a
                 className={`menu ${activeLink === 'about' ? 'active' : ''}`}
-                // to="about"
-                smooth={true}
-                duration={500}
                 onClick={() => scrollToSection('about')}
-            >
-                About
-            </Link>
-            <Link
+            >About</a>
+            <a
                 className={`menu ${activeLink === 'skills' ? 'active' : ''}`}
-                // to="skills"
-                smooth={true}
-                duration={500}
                 onClick={() => scrollToSection('skills')}
-            >
-                Skills
-            </Link>
-            <Link
+            >Skills</a>
+            <a
                 className={`menu ${activeLink === 'projects' ? 'active' : ''}`}
-                // to="projects"
-                smooth={true}
-                duration={500}
                 onClick={() => scrollToSection('projects')}
-            >
-                Projects
-            </Link>
-            <Link
+            >Projects</a>
+            <a
                 className={`menu ${activeLink === 'contact' ? 'active' : ''}`}
-                // to="contact"
-                smooth={true}
-                duration={500}
                 onClick={() => scrollToSection('contact')}
-            >
-                Contact
-            </Link>
+            >Contact</a>
         </div>
     )
 }
 
-export default MenuBox
+export default MenuBox;

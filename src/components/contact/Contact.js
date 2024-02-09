@@ -49,7 +49,7 @@ function Contact() {
                 <div className="contact-container">
                     <div className="left">
                         <q className="content">
-                        Thank you for taking the time to review my portfolio. If you're interested in know more about me and my work or would like to discuss potential employment opportunities, I would love to hear from you!I work hard and wiil be great asset for you. You can reach me using the contact information
+                        Thank you for taking the time to review my portfolio. If you're interested in know more about me and my work or would like to discuss potential employment opportunities, I would love to hear from you! I work hard and wiil be great asset for you. You can reach me using the contact information
                         </q>
                         <div className="contact-detail">
                             <h3>Address</h3>

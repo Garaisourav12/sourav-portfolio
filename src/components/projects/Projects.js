@@ -9,10 +9,10 @@ import { IoIosArrowDropleft, IoIosArrowDropright } from "react-icons/io";
 
 function Projects() {
     const settings = {
-        dots: false,
+        dots: true,
         infinite: true,
         speed: 500,
-        slidesToShow: 2,
+        slidesToShow: 3,
         slidesToScroll: 1,
         prevArrow: <IoIosArrowDropleft className='slick-arrow' />,
         nextArrow: <IoIosArrowDropright className='slick-arrow' />

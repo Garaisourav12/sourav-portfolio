@@ -24,9 +24,9 @@ function Navbar() {
                     </div>
                     <MdOutlineMenu className='toggle-menu' onClick={() => setOpen(true)} />
                 </nav>
-                <div className="mobile-drawer">
-                    <RightDrawer open={open} setOpen={setOpen} />
-                </div>
+                    <div className="mobile-drawer">
+                        <RightDrawer open={open} setOpen={setOpen} />
+                    </div>
             </Wrapper>
         </header>
     )

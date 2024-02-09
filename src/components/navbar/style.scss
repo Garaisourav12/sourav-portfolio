@@ -6,7 +6,7 @@
     background-color: var(--bs-dark);
     position: sticky;
     top: 0;
-    z-index: 1;
+    z-index: 10;
     box-shadow: 0 0 10px var(--bs-gray-800);
     .navbar{
         display: flex;

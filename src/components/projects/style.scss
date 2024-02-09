@@ -1,3 +1,5 @@
+@import '../../mixins.scss';
+
 .projects{
     display: flex;
     flex-direction: column;
@@ -12,8 +14,8 @@
 
     .slick-arrow{
         color: var(--bs-white);
-        width: 2rem;
-        height: 2rem;
+        width: 2.8rem;
+        height: 2.8rem;
         transition-duration: .3s;
         &:hover{
             color: var(--theme);
@@ -22,10 +24,47 @@
 
     .slick-prev{
         left: 0rem;
-        transform: translate(-100%, -50%);
+        transform: translate(1rem, -50%);
+        z-index: 2;
     }
     .slick-next{
         right: 0rem;
-        transform: translate(100%, -50%);
-    } 
+        transform: translate(-1rem, -50%);
+    }
+
+    .slick-track{
+        display: flex!important;
+        gap: .5rem;
+    }
+
+    .slick-dots li{
+        border: 3px solid white;
+        border-radius: 50%;
+        width: 1.2rem;
+        height: 1.2rem;
+    }
+
+    .slick-dots li button{
+        max-width: .1rem;
+        max-height: .1rem;
+        border-radius: 50%;
+        background-color: transparent;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .slick-active{
+        border-color: var(--theme)!important;
+    }
+    .slick-active button{
+        background-color: var(--theme)!important;
+    }
+    .slick-dots li button:before{
+        display: none;
+    }
+
+    @include lg{
+        padding: 3rem 0;
+    }
 }

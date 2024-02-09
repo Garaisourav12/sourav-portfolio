@@ -7,7 +7,7 @@ import TypedText from '../TypedText'
 function Home() {
     return (
         <Wrapper>
-            <div className='home'>
+            <section className='home' id='home' name='home'>
                 <div className="left">
                     <div className="intro">
                         <h2>Hello, It's Me</h2>
@@ -28,7 +28,7 @@ function Home() {
 
                     </div>
                 </div>
-            </div>
+            </section>
         </Wrapper>
     )
 }

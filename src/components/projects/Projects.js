@@ -12,7 +12,7 @@ function Projects() {
         dots: true,
         infinite: true,
         speed: 500,
-        slidesToShow: 3,
+        slidesToShow: 1,
         slidesToScroll: 1,
         prevArrow: <IoIosArrowDropleft className='slick-arrow' />,
         nextArrow: <IoIosArrowDropright className='slick-arrow' />
@@ -20,14 +20,14 @@ function Projects() {
 
     return (
         <Wrapper>
-            <div className='projects'>
+            <section className='projects' id='projects' name='projects'>
                 <h2>Explore My Latest Work</h2>
                 <Slider {...settings}>
                     <ProjectCard />
                     <ProjectCard />
                     <ProjectCard />
                 </Slider>
-            </div>
+            </section>
         </Wrapper>
     )
 }

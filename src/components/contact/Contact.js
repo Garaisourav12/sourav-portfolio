@@ -44,7 +44,7 @@ function Contact() {
     return (
         <Wrapper>
             <ToastContainer />
-            <div className='contact'>
+            <section className='contact' id='contact' name='contact'>
                 <h2>Let's Connect</h2>
                 <div className="contact-container">
                     <div className="left">
@@ -86,7 +86,7 @@ function Contact() {
                         </form>
                     </div>
                 </div>
-            </div>
+            </section>
         </Wrapper>
     )
 }

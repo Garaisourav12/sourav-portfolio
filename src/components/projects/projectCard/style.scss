@@ -1,6 +1,7 @@
 .project-card{
     display: flex;
     padding: .2rem;
+    margin-inline: .5rem;
     border-radius: .9rem;
     background-color: var(--theme);
     // box-shadow: 0 0 8px var(--bs-gray-800);
@@ -10,7 +11,7 @@
         justify-content: center;
         align-items: center;
         position: relative;
-        border-radius: .8rem;
+        border-radius: .9rem;
         overflow: hidden;
 
         img{

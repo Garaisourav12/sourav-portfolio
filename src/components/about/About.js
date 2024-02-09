@@ -30,7 +30,7 @@ function About() {
     
     return (
         <Wrapper>
-            <div className='about'>
+            <section className='about' id='about' name='about'>
                 <h2>Get to Know Me</h2>
                 <div className="container">
                     <div className="intro">
@@ -60,7 +60,7 @@ function About() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
         </Wrapper>
     )
 }

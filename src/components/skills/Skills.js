@@ -64,7 +64,7 @@ function Skills() {
     const [show, setShow] = useState(true)
     return (
         <Wrapper>
-            <div className='skills'>
+            <section className='skills' id='skills' name='skills'>
                 <h2>My Skillset</h2>
                 <div className="skill-tool">
                     <h3 className={`pointer ${show?'active':''}`} onClick={()=>setShow(true)}>Skills I Have</h3>
@@ -86,7 +86,7 @@ function Skills() {
                     {toolCard(<FaGithubSquare style={{color: 'var(--github)'}} />, 'GitHub')}
                     {toolCard(<SiVercel style={{color: 'var(--vercel)'}} />, 'Vercel')}
                 </div>}
-            </div>
+            </section>
 
         </Wrapper>
     )

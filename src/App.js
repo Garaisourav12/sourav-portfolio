@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import Navbar from './components/navbar/Navbar'
 import About from './components/about/About'
 import Home from './components/home/Home'
@@ -10,6 +10,12 @@ import { FaArrowUpLong } from "react-icons/fa6";
 
 
 function App() {
+    const homeRef = useRef();
+    const aboutRef = useRef();
+    const skillsRef = useRef();
+    const projectsRef = useRef();
+    const contactRef = useRef();
+
     return (
         <div className='main'>
             <Navbar />

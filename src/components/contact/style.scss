@@ -16,7 +16,7 @@
         justify-content: center;
         gap: 4rem;
         .left{
-            max-width: 35rem;
+            max-width: 33rem;
             display: flex;
             flex-direction: column;
             gap: 2rem;
@@ -61,15 +61,15 @@
             }
         }
         .right{
-            min-width: 35rem;
+            width: 33rem;
             background-color: var(--theme);
-            padding: .5rem 0;
+            padding: .6rem 0;
             border-radius: 1rem;
             box-shadow: 0 0 20px var(--bs-gray-800);
             form{
                 display: flex;
                 flex-direction: column;
-                gap: 1.5rem;
+                gap: 2rem;
                 background-color: var(--bs-dark);
                 border-radius: 1rem;
                 padding: 2.5rem;
@@ -125,11 +125,11 @@
                 }
             }
             @include lg{
-                max-width: 35rem!important;
                 margin-inline: auto;
             }
             @include sm{
                 width: 100%;
+                max-width: 30rem;
             }
         }
         @include lg{

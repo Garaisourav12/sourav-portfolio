@@ -152,9 +152,9 @@ html{
     @include sm{
         font-size: 12px;
     }
-    @include xsm{
-        font-size: 11px;
-    }
+    // @include xsm{
+    //     font-size: 11px;
+    // }
 }
 
 h2{

@@ -40,6 +40,11 @@
             letter-spacing: 1px;
             line-height: 1.5rem;
         }
+        .social-group{
+            @include sm{
+                margin-top: 1.5rem;
+            }
+        }
         .resume{
             font-size: 1.2rem;
             font-weight: 600;
@@ -56,7 +61,7 @@
                 text-shadow: 0 0 20px var(--theme);
             }
             @include sm{
-                margin-top: 2rem;
+                margin-top: 1.5rem;
             }
         }
         @include lg{

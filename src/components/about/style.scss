@@ -25,11 +25,11 @@
             gap: 2rem;
             h3{
                 align-self: center;
-                color: var(--bs-white);
+                color: var(--theme-text);
                 font-size: 1.5rem;
             }
             q{
-                color: var(--bs-gray-400);
+                color: var(--theme-text-2);
                 letter-spacing: 1px;
                 line-height: 1.5rem;
                 text-align: justify;
@@ -41,7 +41,7 @@
             gap: 2rem;
             h3{
                 align-self: center;
-                color: var(--bs-white);
+                color: var(--theme-text);
                 font-size: 1.5rem;
             }
             .ed-container{

@@ -17,7 +17,7 @@
             display: flex;
             flex-direction: column;
             gap: .5rem;
-            color: var(--bs-white);
+            color: var(--theme-text);
             h1{
                 font-size: 3rem;
                 color: var(--theme);
@@ -28,7 +28,7 @@
             h2{
                 font-size: 1.6rem!important;
                 span{
-                    color: var(--bs-indigo);
+                    color: var(--theme-2);
                 }
                 @include sm{
                     font-size: 1.4rem!important;
@@ -36,7 +36,7 @@
             }
         }
         .summary{
-            color: var(--bs-gray-400);
+            color: var(--theme-text-2);
             letter-spacing: 1px;
             line-height: 1.5rem;
         }
@@ -45,16 +45,15 @@
             font-weight: 600;
             padding: .5rem 1.8rem;
             border-radius: 2rem;
-            color: var(--dark-text-1);
             border: 2px solid var(--theme);
             color: var(--theme);
             box-shadow: 0 0 10px var(--theme);
             transition-duration: .4s;
             &:hover{
                 border: 2px solid var(--theme);
-                color: var(--bs-white);
-                background-color: var(--theme);
-                box-shadow: 0 0 15px var(--bs-white);
+                color: var(--theme);
+                box-shadow: 0 0 20px var(--theme);
+                text-shadow: 0 0 20px var(--theme);
             }
         }
         @include lg{

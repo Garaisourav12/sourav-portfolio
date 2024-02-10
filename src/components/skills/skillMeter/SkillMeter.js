@@ -8,16 +8,15 @@ function SkillMeter({ percent }) {
 
     useEffect(() => {
         let timer = setInterval(() => {
-            // Increment val by 1 until it reaches percent
             setVal((prevVal) => {
                 const nextVal = prevVal + 1;
-                return nextVal > percent ? percent : nextVal;
+                if(nextVal === percent) clearInterval(timer);
+                return nextVal;
             });
         }, 500 / percent);
 
-        // Clear interval when component unmounts
-        return () => clearInterval(timer);
-    }, []); // Re-run effect when percent changes
+        // return () => clearInterval(timer);
+    }, []);
 
     return (
         <div className='skill-meter'>

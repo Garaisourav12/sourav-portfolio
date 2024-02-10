@@ -24,7 +24,7 @@
     }
 
     .slick-arrow{
-        color: var(--bs-white);
+        color: var(--theme-text);
         width: 2.5rem;
         height: 2.7rem;
         transition-duration: .3s;
@@ -64,8 +64,8 @@
         padding: 0;
         margin: 0!important;
         border-radius: 50%;
-        border: .15rem solid var(--bs-white);
-        background-color: var(--bs-white);
+        border: .15rem solid var(--theme-text);
+        background-color: var(--theme-text);
     }
 
     .slick-active button{

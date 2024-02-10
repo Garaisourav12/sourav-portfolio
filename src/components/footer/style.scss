@@ -4,13 +4,13 @@
     align-items: center;
     gap: 1rem;
     padding: 2rem 0;
-    background-color: var(--bs-dark);
+    background-color: var(--theme-card);
     .menus{
         display: flex;
         align-items: center;
         .menu{
             padding-inline: .3rem;
-            color: var(--bs-white);
+            color: var(--theme-text);
             font-size: .8rem;
             font-weight: 600;
             transition-duration: .4s;
@@ -31,7 +31,7 @@
     }
     .dev{
         text-align: center;
-        color: var(--bs-white);
+        color: var(--theme-text);
         font-size: .8rem;
         font-weight: 600;
     }

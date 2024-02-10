@@ -8,9 +8,9 @@
         width: 2.5rem;
         height: 2.5rem;
         border-radius: 50%;
-        border: 2px solid var(--bs-indigo);
-        color: var(--bs-indigo);
-        box-shadow: 0 0 10px var(--bs-indigo);
+        border: 2px solid var(--theme-2);
+        color: var(--theme-2);
+        box-shadow: 0 0 10px var(--theme-2);
         transition-duration: .4s;
         &:hover{
             border: 2px solid var(--theme);

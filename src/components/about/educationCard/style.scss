@@ -6,25 +6,25 @@
     .card{
         padding: 1rem;
         border-radius: .5rem;
-        background-color: var(--bs-dark);
+        background-color: var(--theme-card);
 
         display: flex;
         flex-direction: column;
         gap: .3rem;
 
         h4{
-            color: var(--bs-white);
+            color: var(--theme-text);
         }
 
         p{
-            color: var(--bs-gray-400);
+            color: var(--theme-text-2);
             font-size: .9rem;
         }
 
         .details{
             display: flex;
             justify-content: space-between;
-            color: var(--bs-white);
+            color: var(--theme-text);
             h5{
                 font-size: .7rem;
             }

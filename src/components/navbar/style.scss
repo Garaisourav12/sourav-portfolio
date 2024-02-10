@@ -3,7 +3,7 @@
 
 
 .header{
-    background-color: var(--bs-dark);
+    background-color: var(--theme-card);
     position: sticky;
     top: 0;
     z-index: 10;
@@ -22,7 +22,7 @@
                 color: var(--theme);
                 font-family: 'Yesteryear', cursive;
             }
-            color: var(--bs-white);
+            color: var(--theme-text);
         }
 
         .menus{
@@ -30,7 +30,7 @@
             align-items: center;
             .menu{
                 padding-inline: .8rem;
-                color: var(--bs-white);
+                color: var(--theme-text);
                 font-size: 1.1rem;
                 font-weight: 600;
                 transition-duration: .4s;
@@ -49,7 +49,7 @@
         .toggle-menu{
             display: none;
             cursor: pointer;
-            color: var(--bs-white);
+            color: var(--theme-text);
             font-size: 2.1rem;
             &:hover{
                 color: var(--theme);
@@ -84,9 +84,9 @@
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    background-color: var(--bs-dark);
+    background-color: var(--theme-card);
     .menu{
-        color: var(--bs-white);
+        color: var(--theme-text);
         font-size: 1.1rem;
         font-weight: 600;
         transition-duration: .4s;

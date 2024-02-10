@@ -16,7 +16,6 @@
 
         img{
             width: 100%;
-
         }
 
         .overlay{
@@ -40,7 +39,7 @@
             width: 105%;
             height: 105%;
 
-            border: 3px solid var(--bs-white);
+            border: 3px solid var(--theme-text);
             border-radius: .5rem;
             transition-duration: .5s;
         }
@@ -60,7 +59,7 @@
             justify-content: center;
             gap: .5rem;
             text-align: center;
-            color: var(--bs-white);
+            color: var(--theme-text);
 
             opacity: 0;
             transition-duration: .5s;

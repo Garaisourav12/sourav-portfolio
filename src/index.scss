@@ -52,7 +52,7 @@ a{
     --bs-warning: #ffc107;
     --bs-danger: #dc3545;
     --bs-light: #f8f9fa;
-    --bs-dark: #101010;
+    --bs-dark: #090909;
     --bs-primary-rgb: 13,110,253;
     --bs-secondary-rgb: 108,117,125;
     --bs-success-rgb: 25,135,84;
@@ -89,8 +89,16 @@ a{
     --bs-link-hover-color: #0a58ca;
     --bs-code-color: #d63384;
     --bs-highlight-bg: #fff3cd;
+
+    --theme-bg: var(--bs-body-color);
+    --theme-card: var(--bs-dark);
+    --theme-text: var(--bs-white);
+    --theme-text-2: var(--bs-gray-400);
     --theme: var(--bs-orange);
-    --overlay: #e9b949;
+    --theme-2: var(--bs-pink);
+
+    // --overlay: #e9b949;
+
     --html: #dc4923;
     --css: #0a58ca;
     --sass: #d91a5f;
@@ -106,7 +114,7 @@ a{
 }
 
 body{
-    background-color: var(--bs-body-color);
+    background-color: var(--theme-bg);
 }
 
 a, button{
@@ -120,12 +128,12 @@ a, button{
 
 .scroll-top{
     position: fixed;
-    bottom: 2rem;
-    right: 2rem;
+    bottom: 1.5rem;
+    right: 1.5rem;
     background-color: var(--theme);
-    width: 35px;
-    height: 35px;
-    border-radius: .5rem;
+    width: 32px;
+    height: 32px;
+    border-radius: .3rem;
     border: none;
     display: flex;
     align-items: center;
@@ -133,11 +141,11 @@ a, button{
     cursor: pointer;
     box-shadow: 1px 1px 4px var(--bs-gray-700);
     svg{
-        color: var(--bs-black);
+        color: var(--theme-bg);
         font-size: 19px;
     }
     &:hover{
-        background-color: #ff7300;
+        opacity: .9;
     }
 }
 

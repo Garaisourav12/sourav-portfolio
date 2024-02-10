@@ -55,6 +55,9 @@
                 box-shadow: 0 0 20px var(--theme);
                 text-shadow: 0 0 20px var(--theme);
             }
+            @include sm{
+                margin-top: 2rem;
+            }
         }
         @include lg{
             flex: 1;

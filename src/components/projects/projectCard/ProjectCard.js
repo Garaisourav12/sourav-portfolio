@@ -17,10 +17,10 @@ function ProjectCard({ project }) {
                     <h4 className="title">{project?.title}</h4>
                     <p className="description">{project?.description}</p>
                     <div className="project-links">
-                        <a href={project?.repo_link}>
+                        <a href={project?.repo_link} target='_blank'>
                             <FaGithub />
                         </a>
-                        <a href={project?.live_link}>
+                        <a href={project?.live_link} target='_blank'>
                             <FiExternalLink />
                         </a>    
                     </div>

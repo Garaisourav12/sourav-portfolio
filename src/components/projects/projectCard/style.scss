@@ -27,7 +27,7 @@
             z-index: 1;
             width: 100%;
             height: 100%;
-            background-color: var(--theme-card);
+            background-color: var(--bs-dark);
             opacity: 0;
             transition-duration: .5s;
         }
@@ -73,7 +73,7 @@
 
             .description{
                 font-size: 1rem;
-                color: var(--theme-text);
+                color: var(--bs-white);
                 overflow: hidden;
                 text-overflow: ellipsis;
                 display: -webkit-box;

@@ -139,9 +139,9 @@ a, button{
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    box-shadow: 1px 1px 4px var(--bs-gray-700);
+    box-shadow: 1px 1px 4px var(--bs-gray-600);
     svg{
-        color: var(--theme-bg);
+        color: var(--bs-dark);
         font-size: 19px;
     }
     &:hover{

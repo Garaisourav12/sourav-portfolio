@@ -8,6 +8,7 @@ import Contact from './components/contact/Contact'
 import Projects from './components/projects/Projects'
 import { FaArrowUpLong } from "react-icons/fa6";
 import CustomPointer from './components/customPointer/CustomPointer'
+import DarkLight from './components/darkLight/DarkLight'
 
 
 function App() {
@@ -19,7 +20,6 @@ function App() {
 
     return (
         <div className='main'>
-            <CustomPointer />
             <Navbar />
             <Home />
             <About />
@@ -35,6 +35,9 @@ function App() {
             }}>
                 <FaArrowUpLong />
             </button>
+
+            <CustomPointer />
+            <DarkLight/>
         </div>
     )
 }

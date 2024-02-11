@@ -66,6 +66,10 @@
         border-radius: 50%;
         border: .15rem solid var(--theme-text);
         background-color: var(--theme-text);
+        &:hover{
+            border-color: var(--theme);
+            background-color: var(--theme);
+        }
     }
 
     .slick-active button{

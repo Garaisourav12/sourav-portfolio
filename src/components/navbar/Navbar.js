@@ -16,7 +16,7 @@ function Navbar() {
                         <span>S</span>ourav <span>.</span>
                     </div>
                     {<MenuBox />}
-                    <MdOutlineMenu className='toggle-menu' onClick={() => setOpen(true)} />
+                    <MdOutlineMenu className='toggle-menu pointers' onClick={() => setOpen(true)} />
                 </nav>
                     <div className="mobile-drawer">
                         <RightDrawer open={open} setOpen={setOpen} />

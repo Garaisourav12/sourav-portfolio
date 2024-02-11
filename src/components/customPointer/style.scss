@@ -4,7 +4,7 @@
     border-radius: 50%;
     border: 0.2rem solid var(--theme);
     position: fixed;
-    z-index: 20;
+    z-index: 200;
     transform: translate(-50%, -50%);
     transition: all 0.4s ease-out;
 }
@@ -15,7 +15,7 @@
     border-radius: 50%;
     background-color: var(--theme);
     position: fixed;
-    z-index: 20;
+    z-index: 200;
     transform: translate(-50%, -50%);
     transition: all 0.4s ease-in;
 }

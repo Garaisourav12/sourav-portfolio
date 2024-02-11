@@ -5,9 +5,34 @@ import Wrapper from '../wrapper/Wrapper'
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import yt from '../../assets/yt.png';
 import { IoIosArrowDropleft, IoIosArrowDropright } from "react-icons/io";
 
 function Projects() {
+    const projects = [
+        {
+            title: 'YouTube Clone',
+            description: 'YouTube Clone with JavaScript, utilizing APIs to replicate key functionalities of the popular video-sharing platform, including video playback, search.',
+            image: yt,
+            repo_link: 'https://github.com/Garaisourav12/youtube-clone',
+            live_link: 'https://Garaisourav12.github.io/youtube-clone'
+        },
+        {
+            title: 'YouTube Clone',
+            description: 'YouTube Clone with JavaScript, utilizing APIs to replicate key functionalities of the popular video-sharing platform, including video playback, search.',
+            image: yt,
+            repo_link: 'https://github.com/Garaisourav12/youtube-clone',
+            live_link: 'https://Garaisourav12.github.io/youtube-clone'
+        },
+        {
+            title: 'YouTube Clone',
+            description: 'YouTube Clone with JavaScript, utilizing APIs to replicate key functionalities of the popular video-sharing platform, including video playback, search.',
+            image: yt,
+            repo_link: 'https://github.com/Garaisourav12/youtube-clone',
+            live_link: 'https://Garaisourav12.github.io/youtube-clone'
+        },
+    ]
+
     const settings = {
         dots: true,
         customPaging: (index) => (
@@ -28,9 +53,11 @@ function Projects() {
             <section className='projects' id='projects' name='projects'>
                 <h2>Explore My Latest Work</h2>
                 <Slider {...settings}>
-                    <ProjectCard />
-                    <ProjectCard />
-                    <ProjectCard />
+                    {
+                        projects.map((project, index) => (
+                            <ProjectCard project={project} key={index} />
+                        ))
+                    }
                 </Slider>
             </section>
         </Wrapper>

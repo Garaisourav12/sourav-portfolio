@@ -1,21 +1,31 @@
 import React from 'react'
 import './style.scss'
-import yt from '../../../assets/yt.png'
+import { FaGithub } from "react-icons/fa";
+import { FiExternalLink } from "react-icons/fi";
 
-function ProjectCard() {
+function ProjectCard({ project }) {
     return (
         <div className='project-card pointers'>
             <div className="container">
-                <img src={yt} alt="" />
+                <img src={project?.image} alt="" />
 
                 <div className="overlay"></div>
 
                 <div className="outline"></div>
 
                 <div className="details">
-                    <h4 className="title">YouTube Clone</h4>
-                    <p className="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, fugit!</p>
+                    <h4 className="title">{project?.title}</h4>
+                    <p className="description">{project?.description}</p>
+                    <div className="project-links">
+                        <a href={project?.repo_link}>
+                            <FaGithub />
+                        </a>
+                        <a href={project?.live_link}>
+                            <FiExternalLink />
+                        </a>    
+                    </div>
                 </div>
+
             </div>
         </div>
     )

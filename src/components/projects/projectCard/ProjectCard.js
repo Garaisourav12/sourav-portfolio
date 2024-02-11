@@ -11,7 +11,7 @@ function ProjectCard({ project }) {
 
                 <div className="overlay"></div>
 
-                <div className="outline"></div>
+                {/* <div className="outline"></div> */}
 
                 <div className="details">
                     <h4 className="title">{project?.title}</h4>

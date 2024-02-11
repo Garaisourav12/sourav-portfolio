@@ -6,7 +6,7 @@
     position: fixed;
     z-index: 20;
     transform: translate(-50%, -50%);
-    transition: all 0.6s ease-out;
+    transition: all 0.4s ease-out;
 }
 
 .center {
@@ -17,5 +17,5 @@
     position: fixed;
     z-index: 20;
     transform: translate(-50%, -50%);
-    transition: all 0.6s ease-in;
+    transition: all 0.4s ease-in;
 }

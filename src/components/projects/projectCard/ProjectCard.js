@@ -4,7 +4,7 @@ import yt from '../../../assets/yt.png'
 
 function ProjectCard() {
     return (
-        <div className='project-card'>
+        <div className='project-card pointers'>
             <div className="container">
                 <img src={yt} alt="" />
 

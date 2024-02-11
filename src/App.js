@@ -19,7 +19,7 @@ function App() {
 
     return (
         <div className='main'>
-            {/* <CustomPointer /> */}
+            <CustomPointer />
             <Navbar />
             <Home />
             <About />
@@ -27,7 +27,7 @@ function App() {
             <Projects />
             <Contact />
             <Footer />
-            <button className="scroll-top" onClick={() => {
+            <button className="scroll-top pointers" onClick={() => {
                 window.scrollTo({
                     top: 0,
                     behavior: 'smooth'

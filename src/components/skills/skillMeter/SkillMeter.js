@@ -10,8 +10,8 @@ function SkillMeter({ percent }) {
         let timer = setInterval(() => {
             setVal((prevVal) => {
                 const nextVal = prevVal + 1;
-                if(nextVal === percent) clearInterval(timer);
-                return nextVal;
+                if(nextVal > percent) clearInterval(timer);
+                return nextVal > percent ? percent : nextVal;
             });
         }, 500 / percent);
 

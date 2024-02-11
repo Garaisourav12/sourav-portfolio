@@ -20,7 +20,7 @@ function Home() {
 
                     <Social />
 
-                    <div className="resume pointer">Resume</div>
+                    <div className="resume pointer pointers">Resume</div>
                 </div>
 
                 <div className="right">

@@ -75,23 +75,23 @@ function MenuBox({className, flag}) {
     return (
         <div className={`menus ${className?className:''}`}>
             <a
-                className={`menu ${activeLink === 'home' ? 'active' : ''}`}
+                className={`menu pointers ${activeLink === 'home' ? 'active' : ''}`}
                 onClick={() => scrollToSection('home')}
             >Home</a>
             <a
-                className={`menu ${activeLink === 'about' ? 'active' : ''}`}
+                className={`menu pointers ${activeLink === 'about' ? 'active' : ''}`}
                 onClick={() => scrollToSection('about')}
             >About</a>
             <a
-                className={`menu ${activeLink === 'skills' ? 'active' : ''}`}
+                className={`menu pointers ${activeLink === 'skills' ? 'active' : ''}`}
                 onClick={() => scrollToSection('skills')}
             >Skills</a>
             <a
-                className={`menu ${activeLink === 'projects' ? 'active' : ''}`}
+                className={`menu pointers ${activeLink === 'projects' ? 'active' : ''}`}
                 onClick={() => scrollToSection('projects')}
             >Projects</a>
             <a
-                className={`menu ${activeLink === 'contact' ? 'active' : ''}`}
+                className={`menu pointers ${activeLink === 'contact' ? 'active' : ''}`}
                 onClick={() => scrollToSection('contact')}
             >Contact</a>
         </div>

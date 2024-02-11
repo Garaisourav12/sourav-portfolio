@@ -12,7 +12,7 @@ function Navbar() {
         <header className='header' id='header'>
             <Wrapper>
                 <nav className='navbar'>
-                    <div className="logo pointer">
+                    <div className="logo pointer pointers">
                         <span>S</span>ourav <span>.</span>
                     </div>
                     {<MenuBox />}

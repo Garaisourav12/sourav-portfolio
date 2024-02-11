@@ -11,7 +11,7 @@ function Projects() {
     const settings = {
         dots: true,
         customPaging: (index) => (
-            <button>
+            <button className='pointers'>
                 <div></div>
             </button>
         ),
@@ -19,8 +19,8 @@ function Projects() {
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
-        prevArrow: <IoIosArrowDropleft className='slick-arrow' />,
-        nextArrow: <IoIosArrowDropright className='slick-arrow' />
+        prevArrow: <IoIosArrowDropleft className='slick-arrow pointers' />,
+        nextArrow: <IoIosArrowDropright className='slick-arrow pointers' />
     };
 
     return (

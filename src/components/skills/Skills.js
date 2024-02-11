@@ -30,7 +30,7 @@ import Wrapper from '../wrapper/Wrapper';
 
 function skillCard(logo, title, percent){
     return (
-        <div className="skill">
+        <div className="skill pointers">
             <div className="skill-wrapper">
                 <div className="name-logo">
                     {logo}
@@ -47,7 +47,7 @@ function skillCard(logo, title, percent){
 }
 function toolCard(logo, title){
     return (
-        <div className="tool">
+        <div className="tool pointers">
             <div className="tool-wrapper">
                 <div className="name-logo">
                     {logo}
@@ -67,8 +67,8 @@ function Skills() {
             <section className='skills' id='skills' name='skills'>
                 <h2>My Skillset</h2>
                 <div className="skill-tool">
-                    <h3 className={`pointer ${show?'active':''}`} onClick={()=>setShow(true)}>Skills I Have</h3>
-                    <h3 className={`pointer ${!show?'active':''}`} onClick={()=>setShow(false)}>Tools I Use</h3>
+                    <h3 className={`pointer pointers ${show?'active':''}`} onClick={()=>setShow(true)}>Skills I Have</h3>
+                    <h3 className={`pointer pointers ${!show?'active':''}`} onClick={()=>setShow(false)}>Tools I Use</h3>
                 </div>
                 {show && <div className="skills-container">
                     {skillCard(<RiJavascriptFill style={{color: 'var(--js)'}} />, 'JavaScript', 85)}

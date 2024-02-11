@@ -53,15 +53,15 @@ function Contact() {
                         </q>
                         <div className="contact-detail">
                             <h3>Address</h3>
-                            <p>Kolkata, West Bengal</p>
+                            <p className='pointers'>Kolkata, West Bengal</p>
                         </div>
                         <div className="contact-detail">
                             <h3>Phone No.</h3>
-                            <a href='tel:+919732224977'>+919732224977</a>
+                            <a className='pointers' href='tel:+919732224977'>+919732224977</a>
                         </div>
                         <div className="contact-detail">
                             <h3>Email</h3>
-                            <a href='mailto:garaisourav12@gmail.com'>garaisourav12@gmail.com</a>
+                            <a className='pointers' href='mailto:garaisourav12@gmail.com'>garaisourav12@gmail.com</a>
                         </div>
                     </div>
                     <div className="right">
@@ -70,15 +70,15 @@ function Contact() {
                             onSubmit={handleSubmit}
                         >
                             {/* <input value="garaisourav12@gmail.com" type="hidden" name="_replyto" /> */}
-                            <input value={formData.name} onChange={handleChange} className='inp' type="text" name="name" placeholder="Your Name" required />
+                            <input value={formData.name} onChange={handleChange} className='inp pointers' type="text" name="name" placeholder="Your Name" required />
 
-                            <input value={formData.email} onChange={handleChange} className='inp' type="email" name="email" placeholder="Your Email" required />
+                            <input value={formData.email} onChange={handleChange} className='inp pointers' type="email" name="email" placeholder="Your Email" required />
 
-                            <input value={formData.subject} onChange={handleChange} className='inp' type="text" name="subject" placeholder="Subject" required />
+                            <input value={formData.subject} onChange={handleChange} className='inp pointers' type="text" name="subject" placeholder="Subject" required />
 
-                            <textarea value={formData.message} onChange={handleChange} name="message" className='text-area' rows={6} placeholder="Message" required></textarea>
+                            <textarea value={formData.message} onChange={handleChange} name="message" className='text-area pointers' rows={6} placeholder="Message" required></textarea>
 
-                            <button className='submit pointer' type="submit">
+                            <button className='submit pointer pointers' type="submit">
                                 {state.submitting?(
                                     <ButtonLoader/>
                                 ):('Send Message')}

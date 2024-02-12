@@ -6,10 +6,11 @@ import { VscColorMode } from "react-icons/vsc";
 
 function DarkLight() {
     const [open, setOpen] = useState(false);
-    const [mode, setMode] = useState(false);
-    const [theme, setTheme] = useState('orange')
+    const [mode, setMode] = useState(localStorage.getItem('mode')==='true');
+    const [theme, setTheme] = useState(localStorage.getItem('theme')?localStorage.getItem('theme'):'orange');
 
     useEffect(() => {
+        localStorage.setItem('mode', mode);
         if(!mode) {
             document.documentElement.style.setProperty('--theme-bg', 'var(--bs-body-color)');
             document.documentElement.style.setProperty('--theme-card', 'var(--bs-dark)');
@@ -27,6 +28,7 @@ function DarkLight() {
     }, [mode])
 
     useEffect(() => {
+        localStorage.setItem('theme', theme);
         document.documentElement.style.setProperty('--theme', `var(--bs-${theme})`);
     }, [theme])
 

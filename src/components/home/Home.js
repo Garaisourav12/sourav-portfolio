@@ -1,5 +1,6 @@
 import React from 'react'
 import './style.scss'
+import resumeFile from '../../assets/Sourav Garai Resume jan, 2024.pdf';
 import Wrapper from '../wrapper/Wrapper'
 import Social from '../social/Social'
 import TypedText from '../TypedText'
@@ -20,7 +21,7 @@ function Home() {
 
                     <Social />
 
-                    <div className="resume pointer pointers">Resume</div>
+                    <a href={resumeFile} className="resume pointers" download={'Sourav Garai Resume.pdf'}>Resume</a>
                 </div>
 
                 <div className="right">

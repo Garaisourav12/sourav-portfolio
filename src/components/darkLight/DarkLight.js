@@ -43,7 +43,7 @@ function DarkLight() {
             {
                 open ? (
                     <FaChevronRight className='pointer pointers arrow' onClick={() => {
-                        document.querySelector('.dark-light').style.right = '-13.5rem';
+                        document.querySelector('.dark-light').style.right = '-14.2rem';
                         setOpen(false)
                     }} />
                 ) : (

@@ -2,14 +2,14 @@
 .dark-light{
     position: fixed;
     top: 8rem;
-    right: -13.5rem;
+    right: -14.2rem;
     display: flex;
     align-items: center;
     gap: .8rem;
     transition-duration: .4s;
 
     .arrow{
-        font-size: 1.3rem;
+        font-size: 1.5rem;
         color: var(--theme-text);
         transition-duration: .4s;
         animation: blink 2s linear forwards infinite;
@@ -36,14 +36,14 @@
     button {
         border: none;
         background-color: var(--theme-card);
-        width: 2.3rem;
-        height: 2.3rem;
+        width: 2.5rem;
+        height: 2.5rem;
         border-radius: 50%;
         display: flex;
         justify-content: center;
         align-items: center;
-        box-shadow: 3px 3px 20px var(--theme-shadow);
-        font-size: 1.2rem;
+        box-shadow: 2px 2px 10px var(--theme-shadow);
+        font-size: 1.3rem;
         color: var(--theme-text);
     
         .spin{
@@ -64,18 +64,18 @@
 
     .themes{
         background-color: var(--theme-card);
-        height: 2.3rem;
+        height: 2.5rem;
         border-radius: 2rem;
         padding-inline: .7rem;
         display: flex;
         align-items: center;
         gap: .5rem;
-        box-shadow: 3px 3px 20px var(--theme-shadow);
+        box-shadow: 2px 2px 10px var(--theme-shadow);
 
 
         .theme{
-            width: 1.3rem;
-            height: 1.3rem;
+            width: 1.5rem;
+            height: 1.5rem;
             border: 2px solid transparent;
             border-radius: 50%;
             box-shadow: none;

@@ -21,6 +21,7 @@
             h1{
                 font-size: 3rem;
                 color: var(--theme);
+                text-shadow: 1px 1px 3px var(--theme-shadow);
                 @include sm{
                     font-size: 2.5rem;
                 }

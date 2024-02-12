@@ -6,6 +6,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
+    transition-duration: .4s;
 }
 
 a{
@@ -94,6 +95,7 @@ a{
     --theme-card: var(--bs-dark);
     --theme-text: var(--bs-white);
     --theme-text-2: var(--bs-gray-400);
+    --theme-shadow: var(--bs-gray-600);
     --theme: var(--bs-orange);
     --theme-2: var(--bs-pink);
 
@@ -139,7 +141,7 @@ a, button{
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    box-shadow: 1px 1px 4px var(--bs-gray-600);
+    box-shadow: 1px 1px 4px var(--theme-shadow);
     svg{
         color: var(--bs-dark);
         font-size: 19px;

@@ -65,7 +65,7 @@
             background-color: var(--theme);
             padding: .6rem 0;
             border-radius: 1rem;
-            box-shadow: 0 0 20px var(--bs-gray-800);
+            box-shadow: 0 0 20px var(--theme-shadow);
             form{
                 display: flex;
                 flex-direction: column;
@@ -117,10 +117,10 @@
                     border: none;
                     color: var(--theme2);
                     background-color: var(--theme);
-                    box-shadow: 0 0 5px var(--bs-gray-600);
+                    box-shadow: 0 0 5px var(--theme-shadow);
                     transition-duration: .4s;
                     &:hover{
-                        box-shadow: 0 0 15px var(--bs-gray-600);
+                        box-shadow: 0 0 15px var(--theme-shadow);
                     }
                 }
             }

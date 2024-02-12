@@ -7,7 +7,7 @@ import { VscColorMode } from "react-icons/vsc";
 function DarkLight() {
     const [open, setOpen] = useState(false);
     const [mode, setMode] = useState(localStorage.getItem('mode')==='true');
-    const [theme, setTheme] = useState(localStorage.getItem('theme')?localStorage.getItem('theme'):'orange');
+    const [theme, setTheme] = useState(localStorage.getItem('theme') || 'orange');
 
     useEffect(() => {
         localStorage.setItem('mode', mode);

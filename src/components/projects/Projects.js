@@ -55,11 +55,9 @@ function Projects() {
             <section className='projects' id='projects' name='projects'>
                 <h2>Explore My Latest Work</h2>
                 <Slider {...settings}>
-                    {
-                        projects.map((project, index) => (
-                            <ProjectCard project={project} key={index} />
-                        ))
-                    }
+                    {<ProjectCard project={projects[0]} />}
+                    {<ProjectCard project={projects[1]} />}
+                    {<ProjectCard project={projects[2]} />}
                 </Slider>
             </section>
         </Wrapper>

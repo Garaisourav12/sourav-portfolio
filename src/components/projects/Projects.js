@@ -8,7 +8,7 @@ import 'slick-carousel/slick/slick-theme.css';
 import yt from '../../assets/yt.png';
 import fp from '../../assets/flickipedia.png';
 import imb from '../../assets/imagebazzer.png';
-import { IoIosArrowDropleft, IoIosArrowDropright } from "react-icons/io";
+import { HiArrowSmLeft, HiArrowSmRight } from "react-icons/hi";
 
 function Projects() {
     const projects = [
@@ -46,8 +46,8 @@ function Projects() {
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
-        prevArrow: <IoIosArrowDropleft className='slick-arrow pointers' />,
-        nextArrow: <IoIosArrowDropright className='slick-arrow pointers' />
+        prevArrow: <HiArrowSmLeft className='slick-arrow pointers' />,
+        nextArrow: <HiArrowSmRight  className='slick-arrow pointers' />
     };
 
     return (

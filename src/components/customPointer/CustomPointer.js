@@ -66,6 +66,13 @@ function CustomPointer() {
         };
     }, []);
 
+    useEffect(() => {
+        window.addEventListener('scroll', handleMouseMove);
+        // return () => {
+        //     window.removeEventListener('scroll', handleMouseMove);
+        // };
+    }, []);
+
     return (
         <>
         <div ref={ring} className="ring"></div>

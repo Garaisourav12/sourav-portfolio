@@ -140,9 +140,9 @@ a, button{
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    box-shadow: 1px 1px 4px var(--theme-shadow);
+    // box-shadow: 1px 1px 4px var(--theme-shadow);
     svg{
-        color: var(--bs-dark);
+        color: var(--bs-white);
         font-size: 19px;
     }
     &:hover{

@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-    padding: 2rem 0;
+    padding: 3rem 0;
     background-color: var(--theme-card);
     .menus{
         display: flex;
@@ -11,7 +11,7 @@
         .menu{
             padding-inline: .3rem;
             color: var(--theme-text);
-            font-size: .8rem;
+            font-size: .9rem;
             font-weight: 600;
             transition-duration: .4s;
             &.active{
@@ -24,15 +24,23 @@
     }
     .social-group{
         gap: 1rem;
-        .social-circle{
-            width: 2rem;
-            height: 2rem;
-        }
+        // .social-circle{
+        //     width: 2rem;
+        //     height: 2rem;
+        // }
     }
     .dev{
         text-align: center;
         color: var(--theme-text);
-        font-size: .8rem;
+        font-size: .9rem;
         font-weight: 600;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        svg{
+            font-size: .8rem;
+            color: var(--theme);
+            margin-inline: .3rem;
+        }
     }
 }

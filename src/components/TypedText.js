@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { ReactTyped } from 'react-typed';
 
 function TypedText() {
-    // const texts = ['React Frontend Developer', 'NodeJs Backend Developer', 'Mern Fullstack Developer'];
-    const texts = ['React Frontend Developer'];
+    const texts = ['React Frontend Developer', 'NodeJs Backend Developer', 'Mern Fullstack Developer'];
+    // const texts = ['React Frontend Developer'];
 
     return (
         <ReactTyped

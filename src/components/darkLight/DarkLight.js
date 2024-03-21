@@ -33,9 +33,9 @@ function DarkLight() {
     }, [theme])
 
     const handleClick = (e) => {
-        e.target.classList.toggle('spin');
+        document.querySelector('.spinner').classList.toggle('spin');
         setTimeout(() => {
-            e.target.classList.toggle('spin');
+            document.querySelector('.spinner').classList.toggle('spin');
             setMode(!mode)
         }, 1000)
     }
@@ -58,9 +58,9 @@ function DarkLight() {
 
             <button className='pointer pointers' onClick={handleClick} >
                 {mode ? (
-                    <MdDarkMode />
+                    <MdDarkMode className='spinner' />
                 ) : (
-                    <MdLightMode />
+                    <MdLightMode className='spinner' />
                 )}
             </button>
 

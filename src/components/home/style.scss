@@ -83,11 +83,16 @@
             width: 20rem;
             height: 20rem;
             border-radius: 50%;
-            box-shadow: 0 0 20px var(--theme);
+            // box-shadow: 0 0 20px var(--theme);
             @include lg{
                 width: 16rem;
                 height: 16rem;
                 margin: 0;
+            }
+            img{
+                width: 100%;
+                height: 100%;
+                animation: spin infinite 20s linear;
             }
         }
     }
@@ -96,5 +101,12 @@
         flex-direction: column-reverse;
         padding: 3rem 0;
         gap: 2.5rem;
+    }
+}
+
+
+@keyframes spin{
+    to{
+        transform: rotate(360deg);
     }
 }

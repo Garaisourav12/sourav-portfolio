@@ -4,6 +4,7 @@ import resumeFile from '../../assets/Sourav Garai Resume jan, 2024.pdf';
 import Wrapper from '../wrapper/Wrapper'
 import Social from '../social/Social'
 import TypedText from '../TypedText'
+import logo from '../../assets/logo.png'
 
 function Home() {
     return (
@@ -26,7 +27,7 @@ function Home() {
 
                 <div className="right">
                     <div className="img-box">
-
+                        <img src={logo} alt="" />
                     </div>
                 </div>
             </section>

@@ -8,10 +8,18 @@ import 'slick-carousel/slick/slick-theme.css';
 import yt from '../../assets/yt.png';
 import fp from '../../assets/flickipedia.png';
 import imb from '../../assets/imagebazzer.png';
+import pp from '../../assets/podpulse.png';
 import { HiArrowSmLeft, HiArrowSmRight } from "react-icons/hi";
 
 function Projects() {
     const projects = [
+        {
+            title: 'Podpulse',
+            description: 'PodPulse redefines the podcasting experience, offering users a seamless platform to create, share, and listen to podcasts.',
+            image: pp,
+            repo_link: 'https://github.com/Garaisourav12/Podpulse',
+            live_link: 'https://podpulse-rho.vercel.app/'
+        },
         {
             title: 'Flickipedia',
             description: 'A comprehensive movie & tv show information app using React, offering users detailed insights, ratings, trailer and search capabilities for an enriched cinematic experience.',
@@ -55,9 +63,11 @@ function Projects() {
             <section className='projects' id='projects' name='projects'>
                 <h2>Explore My Latest Work</h2>
                 <Slider {...settings}>
-                    {<ProjectCard project={projects[0]} />}
-                    {<ProjectCard project={projects[1]} />}
-                    {<ProjectCard project={projects[2]} />}
+                    {
+                        projects.map((project, i) => (
+                            <ProjectCard project={project} />
+                        ))
+                    }
                 </Slider>
             </section>
         </Wrapper>
